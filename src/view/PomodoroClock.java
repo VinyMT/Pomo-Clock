@@ -89,7 +89,7 @@ public class PomodoroClock implements ActionListener{
 		startButton.addActionListener(this);
 		frame.getContentPane().add(startButton);
 		
-		//Instancia o timer do ciclo 25 e a aÁ„o que ir· ocorrer nele
+		//Instancia o timer do ciclo 25 e a a√ß√£o que ir√° ocorrer nele
 		ciclo25 = new Timer(1000, new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cont++;
@@ -105,7 +105,7 @@ public class PomodoroClock implements ActionListener{
 			}
 		});
 		
-		//Instancia o timer do ciclo 5 e a aÁ„o que ir· ocorrer nele
+		//Instancia o timer do ciclo 5 e a a√ß√£o que ir√° ocorrer nele
 		ciclo5 = new Timer(1000, new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cont++;
@@ -124,13 +124,13 @@ public class PomodoroClock implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		//Checa se a fonte da aÁ„o foi o bot„o de start, se sim, inicia o timer
+		//Checa se a fonte da a√ß√£o foi o bot√£o de start, se sim, inicia o timer
 		if(e.getSource() == startButton) {
 			ciclo25.start();
 			cicloAtual = ciclo25;
 		}
 		
-		//Checa se a fonte da aÁ„o foi o bot„o stop, se sim, para o timer
+		//Checa se a fonte da a√ß√£o foi o bot√£o stop, se sim, para o timer
 		if(e.getSource() == stopButton) {
 			cicloAtual.stop();
 			cont = 0;
